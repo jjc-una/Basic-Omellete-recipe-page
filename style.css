@@ -23,6 +23,9 @@ body{
     color: var(--Stone600);
     
 }
+.images{
+    display: none;
+}
 .container{
     background-color: var(--White);
     max-width: 50%;
@@ -121,4 +124,58 @@ body{
 .table td:nth-child(2){
     color: var(--Brown800);
     font-weight: bolder;
+}
+
+/* mobile view */
+/* medium: 768ox ; max width 970px */
+
+/* small devices max width:678px */
+
+@media (max-width: 768px ) {
+    body{
+        background-color: var(--Brown800);
+        color: var(--White);
+        
+        
+    }
+    .container{
+        margin: 0px 10px;
+        
+        
+        max-width: 100%;
+        border-radius: 0%;
+        padding: 0px;
+        background-color: var(--Brown800)
+    
+
+    }
+    .container h2{
+        color: var(--Stone900);
+    }
+    .Preparation li::marker{
+        color: var(--Stone900);
+    }
+    .Ingredients li::marker{
+        color: var(--Stone900);
+    }
+    .container img{
+        border-radius: 0%;
+        width: 100%;
+        display: none;
+    }
+    .images{
+        display: block;
+        width: 100%;
+       }
+    
+    .Preparation li{
+        color: var(--Brown800);
+    
+    }
+    .instructions li::marker{
+        color: var(--Stone900);
+    }
+        
+    
+
 }
